@@ -28,7 +28,7 @@ export class CartComponent implements OnInit {
   onSubmit(): void {
     // Process checkout data here
     this.items = this.cartService.clearCart();
-    console.warn('Your order has been submitted', this.checkoutForm.value);
+    console.warn('Your order has been submitted', this.checkoutForm.value); //Teniendo acá los valores se los envío al service de Angular y en ese service se lo envío al servicio REST encargado de la autenticación
     this.checkoutForm.reset();
   }
 
